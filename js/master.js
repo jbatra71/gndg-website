@@ -1,0 +1,41 @@
+$(document).ready(function(){
+  $("#about_button").click(function(){
+    if($(".past_meetup").css("display")=="block")
+    {
+      $(".past_meetup").fadeOut("fast",function(){
+        $(".about").fadeIn("fast");
+      });
+    }
+    else {
+      $(".contact").fadeOut("fast",function(){
+        $(".about").fadeIn("fast");
+      });
+    }
+  });
+  $("#past_meetup_button").click(function(){
+    if($(".contact").css("display")=="block")
+    {
+      $(".contact").fadeOut("fast",function(){
+        $(".past_meetup").fadeIn("fast");
+      });
+    }
+    else {
+      $(".about").fadeOut("fast",function(){
+        $(".past_meetup").fadeIn("fast");
+      });
+    }
+  });
+  $("#contact_button").click(function(){
+    if($(".past_meetup").css("display")=="block")
+    {
+      $(".past_meetup").fadeOut("fast",function(){
+        $(".contact").fadeIn("fast");
+      });
+    }
+    else {
+      $(".about").fadeOut("fast",function(){
+        $(".contact").fadeIn("fast");
+      });
+    }
+  });
+});
