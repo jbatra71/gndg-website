@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400')
+.header, h1, h2, h3, h4
+  font-family: 'Roboto', sans-serif
+  font-weight: 300
+  text-align: center
+  .hr_block
+      font-size: 0px
+      hr
+        display: inline-block
+        padding: 0px
+        border: 1px black
+        border-style: solid none none none
+        width: .1*100%
+        transition: all .4s ease-in 50ms
+      .left_hidden, .right_hidden
+        width: 0px
+@media only screen and (min-width: 770px)
+  .header:hover
+    .hr_block
+      .left
+        width: 0px
+        transform: rotate(-180deg)
+        transition: all .6s ease-in 50ms
+      .left_hidden
+        width: .1*100%
+        transform: rotate(-180deg)
+        transition: all .6s ease-in 50ms
+      .right
+        width: 0px
+        transform: rotate(180deg)
+        transition: all .6s ease-in 50ms
+      .right_hidden
+        width: .1*80%
+        transform: rotate(180deg)
+        transition: all .6s ease-in 50ms
+@media only screen  and (min-width:770px)
+  .nav_button
+    display: none
+@media only screen  and (max-width:770px)
+  .nav_button
+    width: 40px
+    height: 40px
+    margin: auto
+    i
+      transform: rotate(90deg)
+      transition: all .5s ease-in
+  .nav_button_click
+    width: 40px
+    height: 40px
+    margin: auto
+    i
+      transform: rotate(270deg)
+      transition: all .5s ease-in
+@media only screen and (max-width: 770px)
+  .hr_block
+    display: none
+  .about, .past_meetup, .contact
+    min-height: 300px
+
+.mid_div
+  margin-top: 30px
+  @media only screen and (max-width: 770px)
+    .nav
+      display: none
+  .nav
+    z-index: 0
+    .navigation
+      text-align: center
+      .hr_block
+          font-size: 0px
+          hr
+            display: inline-block
+            padding: 0px
+            border: 1px black
+            border-style: solid none none none
+            width: .2*100%
+            transition: all.4s ease-in 50ms
+          .left_hidden, .right_hidden
+            width: 0px
+    .back1
+      height: 400px
+      width: 100%
+      margin-left: 10px
+      position: absolute
+      z-index: -1
+      background-color: #E6EBE0
+      opacity: 0
+      transform: scale(0.1) skewX(0deg) skewY(0deg) rotateY(180)
+      transition: all .5s ease-in 0ms
+  @media only screen and (min-width: 770px)
+    .nav:hover
+      .hr_block
+        .left
+          width: 0px
+          transform: rotate(-180deg)
+          transition: all .6s ease-in 50ms
+        .left_hidden
+          width: .2*100%
+          transform: rotate(-180deg)
+          transition: all .6s ease-in 50ms
+        .right
+          width: 0px
+          transform: rotate(180deg)
+          transition: all .6s ease-in 50ms
+        .right_hidden
+          width: .2*80%
+          transform: rotate(180deg)
+          transition: all .6s ease-in 50ms
+      .back1
+        opacity: 0.7
+        transform: scale(1) skewX(5deg) skewY(5deg) rotateY(0)
+        transition: all .3s ease-in 0ms
+  .nav_item
+    ul
+      list-style: none
+      margin-top: 60px
+      padding: 0px
+      li
+        text-align: left
+        margin-top: 30px
+        text-align: center
+        z-index: 0
+        cursor: pointer
+        .back
+          height: 40px
+          width: 80%
+          margin-left: 5%
+          margin-top: -5px
+          position: absolute
+          z-index: -1
+          background-color: #22031F
+          opacity: 0
+          transform: scale(0.1) skewX(0deg) rotateX(180deg)
+          transition: all .5s ease-in 10ms
+        transition: color .5s ease-in 10ms
+@media only screen and (min-width: 770px)
+  .nav_mobile
+    display: none
+@media only screen  and (max-width:770px)
+  .nav_mobile
+    display: none
+    position: absolute
+    width: 60%
+    height: 150px
+    z-index: 1
+    text-align: center
+    margin-left: 16%
+    background-color: #eeeeee
+    ul
+      li
+        cursor: pointer
+@media only screen and (min-width: 770px)
+  .nav_item ul li:hover
+    color: #F4F1BB
+    .back
+      opacity: 0.8
+      transform: scale(1) skewX(20deg) rotateX(0deg)
+      transition: all .3s ease-in 10ms
+    transition: color .3s ease-in 10ms
+.social
+  text-align: center
+  .hr_block
+      font-size: 0px
+      hr
+        display: inline-block
+        padding: 0px
+        border: 1px black
+        border-style: solid none none none
+        width: .2*100%
+        transition: all.4s ease-in 50ms
+      .left_hidden, .right_hidden
+        width: 0px
+@media only screen and (min-width: 770px)
+  .social:hover
+    .hr_block
+      .left
+        width: 0px
+        transform: rotate(-180deg)
+        transition: all .6s ease-in 50ms
+      .left_hidden
+        width: .2*100%
+        transform: rotate(-180deg)
+        transition: all .6s ease-in 50ms
+      .right
+        width: 0px
+        transform: rotate(180deg)
+        transition: all .6s ease-in 50ms
+      .right_hidden
+        width: .2*80%
+        transform: rotate(180deg)
+        transition: all .6s ease-in 50ms
+.about, .past_meetup, .contact
+  z-index: 0
+  text-align: center
+  .back2
+    height: 400px
+    width: 100%
+    margin-left: -10px
+    position: absolute
+    z-index: -1
+    background-color: #E6EBE0
+    opacity: 0
+    transform: scale(0.1) rotateY(180)
+    transition: all .5s ease-in 0ms
+  .hr_block
+      font-size: 0px
+      hr
+        display: inline-block
+        padding: 0px
+        border: 1px black
+        border-style: solid none none none
+        width: .15*100%
+        transition: all.4s ease-in 50ms
+      .left_hidden, .right_hidden
+        width: 0px
+@media only screen and (min-width: 770px)
+  .about:hover, .past_meetup:hover, .contact:hover
+    .back2
+      opacity: 0.7
+      transform: scale(1) rotateY(0)
+      transition: all .3s ease-in 0ms
+    .hr_block
+      .left
+        width: 0px
+        transform: rotate(-180deg)
+        transition: all .6s ease-in 50ms
+      .left_hidden
+        width: .15*100%
+        transform: rotate(-180deg)
+        transition: all .6s ease-in 50ms
+      .right
+        width: 0px
+        transform: rotate(180deg)
+        transition: all .6s ease-in 50ms
+      .right_hidden
+        width: .2*80%
+        transform: rotate(180deg)
+        transition: all .6s ease-in 50ms
+.past_meetup
+  display: none
+.contact
+  display: none
+.social
+  z-index: 0
+  text-align: center
+  .back3
+    height: 400px
+    width: 100%
+    margin-left: -10px
+    position: absolute
+    z-index: -1
+    background-color: #E6EBE0
+    opacity: 0
+    transform: scale(0.1) skewX(0deg) skewY(0deg) rotateY(180)
+    transition: all .5s ease-in 0ms
+@media only screen and (min-width: 770px)
+  .social:hover
+    .back3
+      opacity: 0.7
+      transform: scale(1) skewX(-5deg) skewY(-5deg) rotateY(0)
+      transition: all .3s ease-in 0ms
+.tweet
+  max-height: 300px
+.last_div
+  margin: auto
+  margin-top: 100px
+  text-align: center
+  .hr_block
+      font-size: 0px
+      hr
+        display: inline-block
+        padding: 0px
+        border: 1px black
+        border-style: solid none none none
+        width: .15*100%
+        transition: all.4s ease-in 50ms
+      .left_hidden, .right_hidden
+        width: 0px
+@media only screen and (min-width: 770px)
+  .last_div:hover
+    .left
+      width: 0px
+      transform: rotate(-180deg)
+      transition: all .6s ease-in 50ms
+    .left_hidden
+      width: .15*100%
+      transform: rotate(-180deg)
+      transition: all .6s ease-in 50ms
+    .right
+      width: 0px
+      transform: rotate(180deg)
+      transition: all .6s ease-in 50ms
+    .right_hidden
+      width: .2*80%
+      transform: rotate(180deg)
+      transition: all .6s ease-in 50ms
