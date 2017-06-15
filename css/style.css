@@ -1,26 +1,15 @@
-/*custom css*/
-* {
-  margin: 0;
-  border: 0;
-  padding: 0; }
+.aboutSection{
+    text-align: justify;
+}
 
-@font-face {
-  font-family: 'Roboto', sans-serif;
-  src: url('https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet');
-  font-weight: normal;
-  font-style: normal; }
-.content {
-  margin: 0 auto;
-  padding: 20px 1.5em 20px;
-  max-width: 950px; }
+.list{
+    list-style: none;
+    padding: 0px;
+}
 
-.col-md-12 img {
-  width: 35%; }
-.col-md-12 section ul {
-  text-align: left;
-  display: inline;
-  margin: 0;
-  list-style: none;
-  padding-left: 0px; }
-
-/*# sourceMappingURL=style.css.map */
+.list li{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
