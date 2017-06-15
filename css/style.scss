@@ -1,0 +1,37 @@
+/*custom css*/
+
+*{
+      margin: 0;
+      border: 0;
+      padding: 0;
+}
+
+@font-face {
+      font-family: 'Roboto', sans-serif;
+      src: url('https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet');
+      font-weight: normal;
+      font-style: normal;
+}
+
+
+
+.content{
+	margin: 0 auto;
+	padding: 20px 1.5em 20px;
+	max-width: 950px;
+}
+
+.col-md-12{
+	img{
+		width: 35%;
+	}
+	section{
+		ul{
+			text-align: left;
+			display: inline;
+			margin: 0;
+			list-style: none;
+			padding-left: 0px;
+		}
+	}
+}
