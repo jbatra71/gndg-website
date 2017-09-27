@@ -1,0 +1,15 @@
+.aboutSection{
+    text-align: justify;
+}
+
+.list{
+    list-style: none;
+    padding: 0px;
+}
+
+.list li{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
