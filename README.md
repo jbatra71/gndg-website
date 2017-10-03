@@ -6,6 +6,7 @@ Its a volunteer driven community. If you want to help us out please feel free to
 
 ### Domain Contributors
 - Ashutosh Kumar Singh 
+- Mannu Gupta
 - Pradhvan Bisht
 - Rajat Saini
 - Rishabh Singh
